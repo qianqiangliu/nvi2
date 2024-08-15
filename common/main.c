@@ -73,6 +73,8 @@ editor(GS *gp, int argc, char *argv[])
 	SLIST_INIT(gp->cutq);
 	SLIST_INIT(gp->seqq);
 
+	setprogname(argv[0]);
+
 	/* Set initial screen type and mode based on the program name. */
 	readonly = 0;
 	if (!strcmp(getprogname(), "ex") || !strcmp(getprogname(), "nex"))

@@ -18,6 +18,7 @@
 #endif
 #include <regex.h>		/* May refer to the bundled regex. */
 #include <stdint.h>
+#include <linux.h>
 
 /*
  * Forward structure declarations.  Not pretty, but the include files
